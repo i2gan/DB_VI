@@ -13,9 +13,9 @@ public class Data {
     int sugar;
     int smoking;
     int eveningTeeth;
-    double weight;
+    float weight;
 
-    public Data(int day, int month, int year, int morningTeeth, int oneBread, int sugar, int smoking, int eveningTeeth, double weight) {
+    public Data(int day, int month, int year, int morningTeeth, int oneBread, int sugar, int smoking, int eveningTeeth, float weight) {
         this.day = day;
         this.month = month;
         this.year = year;

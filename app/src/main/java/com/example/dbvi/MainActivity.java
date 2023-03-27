@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     int dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH);
 
     int morningTeeth, oneBread, sugar, smoking, eveningTeeth;
-    double weight;
+    float weight;
 
     TextView tv, tv_output;
     CheckBox chb_morningTeeth, chb_oneBread, chb_noSugar, chb_noSmoking, chb_eveningTeeth;
@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 else
                     eveningTeeth = 0;
 
-                weight = Double.parseDouble(et_weight.getText().toString());
+                weight = Float.parseFloat(et_weight.getText().toString());
 
                 Data data = new Data(dayOfMonth, month, year, morningTeeth,
                         oneBread, sugar, smoking, eveningTeeth, weight);

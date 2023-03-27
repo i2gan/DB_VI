@@ -96,7 +96,7 @@ public class DBHelper extends SQLiteOpenHelper {
                         cursor.getInt(id_noSugar),
                         cursor.getInt(id_noSmoking),
                         cursor.getInt(id_eveningTeeth),
-                        cursor.getDouble(id_weight));
+                        cursor.getFloat(id_weight));
                 list.add(data);
             } while (cursor.moveToNext());
         db.close();
